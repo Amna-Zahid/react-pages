@@ -11,11 +11,7 @@ pipeline {
                           bat 'npm install'
                      }
                 }
-                stage("build") {
-                     steps {
-                          bat 'npm run build'
-                     }
-                }
+              
                 stage("test") {
                      steps {
                           powershell 'build.ps1'
