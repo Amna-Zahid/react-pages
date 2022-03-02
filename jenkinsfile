@@ -1,5 +1,5 @@
 nodejs {
-    bat 'npm --version'
+    bat 'npm install'
 }
    
 
