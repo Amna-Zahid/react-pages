@@ -1,1 +1,1 @@
-echo "hello world"
+ bat 'npm run build'
