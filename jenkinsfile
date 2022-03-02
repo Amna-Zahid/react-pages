@@ -1,5 +1,5 @@
 nodejs {
-    npm --version
+    bat 'npm --version'
 }
    
 
