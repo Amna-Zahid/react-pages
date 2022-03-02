@@ -6,5 +6,10 @@ pipeline {
                           bat 'docker pull node:alpine'
                      }
                 }
+                stage("library") {
+                     steps {
+                          bat 'npm install'
+                     }
+                }
            }
       }
