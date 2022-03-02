@@ -1,3 +1,4 @@
+tool name: '', type: 'nodejs'
 bat '''npm install
 npm install react-scripts
 npm run build'''
