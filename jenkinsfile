@@ -1,4 +1,6 @@
-
-bat '''npm install
-npm install react-scripts
-npm run build'''
+node {
+    env.NODEJS_HOME = "${tool 'Node 14.x'}"
+    // on windows
+    env.PATH="${env.NODEJS_HOME};${env.PATH}"
+    bat 'npm --version'
+}
