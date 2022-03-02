@@ -8,12 +8,17 @@ pipeline {
                 }
                 stage("library") {
                      steps {
-                          npm install
+                          bat 'npm install'
                      }
                 }
                 stage("build") {
                      steps {
-                          npm run build
+                          bat 'npm run build'
+                     }
+                }
+                stage("test") {
+                     steps {
+                          powershell 'build.ps1'
                      }
                 }
            }
