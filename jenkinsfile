@@ -1,0 +1,15 @@
+pipeline {
+           agent any
+           stages {
+                stage("Hello") {
+                     steps {
+                          bat 'docker pull node:alpine'
+                     }
+                }
+                stage("library") {
+                     steps {
+                          bat 'build.ps1'
+                     }
+                }
+           }
+      }
