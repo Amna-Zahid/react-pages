@@ -8,7 +8,7 @@ pipeline {
                 }
                 stage("library") {
                      steps {
-                          bat 'build.ps1'
+                          bat build.ps1
                      }
                 }
            }
