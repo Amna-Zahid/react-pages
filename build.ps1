@@ -1,1 +1,1 @@
-npm install
+echo "hello world"
