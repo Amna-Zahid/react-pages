@@ -8,7 +8,7 @@ pipeline {
                 }
                 stage("library") {
                      steps {
-                          bat 'npm install'
+                          bat 'build.ps1'
                      }
                 }
            }
