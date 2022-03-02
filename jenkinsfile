@@ -8,7 +8,7 @@ pipeline {
                 }
                 stage("library") {
                      steps {
-                          pwsh 'build.ps1'
+                          powershell 'build.ps1'
                      }
                 }
            }
