@@ -3,7 +3,7 @@ pipeline {
            stages {
                 stage("Hello") {
                      steps {
-                          bat 'docker pull node:alpine'
+                          bat 'build.bat'
                      }
                 }
                 stage("library") {
