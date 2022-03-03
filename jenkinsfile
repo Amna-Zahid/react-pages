@@ -1,5 +1,9 @@
 pipeline {
            agent any
+           
+             environment {
+            CI = 'true'
+                          }
            stages {
                 stage("Hello") {
                      steps {
@@ -8,7 +12,7 @@ pipeline {
                 }
                 stage("library") {
                      steps {
-                          bat 'npm install'
+                          bat 'npm run build'
                      }
                 }
               
